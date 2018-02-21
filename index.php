@@ -1,5 +1,5 @@
 <?php
-	$date =  date('Y/m/d', time());
+	$date =  date('Y-m-d', time());
 	echo "The value of \$date: ".$date."<br>";
 	$tar = "2017/05/24";
 	echo "The value of \$tar: ".$tar."<br>";
@@ -7,6 +7,10 @@
 	echo "The value of \$year: ";
 	print_r($year);
 	echo "<br>";
+
+	$date = str_replace("-", "/", $date);
+
+	echo "The value of \$date is now ".$date."<br>";
 
 	if (($date - $tar) > 0)
 	{
@@ -30,4 +34,9 @@
 			echo $stringIndex." ";
 		}
 	}
+
+	echo "<br>";
+
+	$dateArray = explode("/", $date);
+	echo "There are ".count($dateArray)." words in \$date.";
 ?>
