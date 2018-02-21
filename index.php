@@ -34,9 +34,10 @@
 			echo $stringIndex." ";
 		}
 	}
-
 	echo "<br>";
 
 	$dateArray = explode("/", $date);
-	echo "There are ".count($dateArray)." words in \$date.";
+	echo "There are ".count($dateArray)." words in \$date.<br>";
+
+	echo "Length of \$date: ".strlen($date);
 ?>
