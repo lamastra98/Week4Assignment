@@ -39,5 +39,7 @@
 	$dateArray = explode("/", $date);
 	echo "There are ".count($dateArray)." words in \$date.<br>";
 
-	echo "Length of \$date: ".strlen($date);
+	echo "Length of \$date: ".strlen($date)."<br>";
+
+	echo "The ASCII value of the first letter in \$date: ".ord($date)."<br>"
 ?>
