@@ -41,5 +41,7 @@
 
 	echo "Length of \$date: ".strlen($date)."<br>";
 
-	echo "The ASCII value of the first letter in \$date: ".ord($date)."<br>"
+	echo "The ASCII value of the first letter in \$date: ".ord($date)."<br>";
+
+	echo "The last two characters of \$date are: ".substr($date, -2)."<br>";
 ?>
