@@ -10,22 +10,23 @@
 
 	$date = str_replace("-", "/", $date);
 
-	echo "The value of \$date is now ".$date."<br>";
+	echo "2.) The value of \$date is now ".$date."<br><br>";
 
+	echo "3.) ";
 	if (($date - $tar) > 0)
 	{
-	  echo "The future<br>";
+	  echo "The future<br><br>";
 	}
 	else if (($date - $tar) < 0)
 	{
-	  echo "The past<br>";
+	  echo "The past<br><br>";
 	}
 	else
 	{
-	  echo "oops<br>";
+	  echo "oops<br><br>";
 	}
 
-	echo "Backslashes appear at the following positions in \$date: ";
+	echo "4.) Backslashes appear at the following positions in \$date: ";
 	for($stringIndex = 0; $stringIndex < strlen($date); $stringIndex++)
 	{
 		if ($date[$stringIndex] == "/")
@@ -33,23 +34,23 @@
 			echo $stringIndex." ";
 		}
 	}
-	echo "<br>";
+	echo "<br><br>";
 
 	$dateArray = explode("/", $date);
-	echo "There are ".count($dateArray)." words in \$date.<br>";
+	echo "5.) There are ".count($dateArray)." words in \$date.<br><br>";
 
-	echo "Length of \$date: ".strlen($date)."<br>";
+	echo "6.) Length of \$date: ".strlen($date)."<br><br>";
 
-	echo "The ASCII value of the first letter in \$date: ".ord($date)."<br>";
+	echo "7.) The ASCII value of the first letter in \$date: ".ord($date)."<br><br>";
 
-	echo "The last two characters of \$date are: ".substr($date, -2)."<br>";
+	echo "8.) The last two characters of \$date are: ".substr($date, -2)."<br><br>";
 
-	echo "Date Array: ";
+	echo "9.) Date Array: ";
 
 	print_r($dateArray);
-	echo "<br>";
+	echo "<br><br>";
 
-	echo "Leap Years: <br>";
+	echo "10.) Leap Years: <br>";
 
 	foreach($year as $myYear)
 	{
