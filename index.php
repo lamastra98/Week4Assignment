@@ -25,7 +25,6 @@
 	  echo "oops<br>";
 	}
 
-
 	echo "Backslashes appear at the following positions in \$date: ";
 	for($stringIndex = 0; $stringIndex < strlen($date); $stringIndex++)
 	{
@@ -44,4 +43,32 @@
 	echo "The ASCII value of the first letter in \$date: ".ord($date)."<br>";
 
 	echo "The last two characters of \$date are: ".substr($date, -2)."<br>";
+
+	echo "Date Array: ";
+
+	print_r($dateArray);
+	echo "<br>";
+
+	echo "Leap Years: <br>";
+
+	foreach($year as $myYear)
+	{
+		if(($myYear % 4) == 0)
+		{
+			if(($myYear % 400 != 0) && ($myYear % 100 == 0))
+			{
+				echo $myYear." is not a leap year.";
+			}
+			else
+			{
+				echo $myYear." is a leap year.";
+			}
+		}
+		else
+		{
+			echo $myYear." is not a leap year.";
+		}
+
+		echo "<br>";
+	}
 ?>
